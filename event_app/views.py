@@ -116,7 +116,7 @@ def signin(request):
         login(request, user)
         return redirect('home')
 
-    return render(request, 'signin.html')
+    return render(request, 'index.html')
 
 
 # def signin(request):
