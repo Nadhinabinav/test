@@ -105,7 +105,7 @@ def signup(request):
 def signin(request):
     if request.method == 'POST':
         emailn = request.POST.get('email')
-        passwordn = request.POST.get('psw')
+        passwordn = request.POST.get('psw') 
 
         # authenticate expects username, so we pass username=email
         user = authenticate(username=emailn, password=passwordn)
